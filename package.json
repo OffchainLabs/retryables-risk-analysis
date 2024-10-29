@@ -1,0 +1,31 @@
+{
+  "name": "retryables-analysis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "TucksonDev <tucksondev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@offchainlabs/eslint-config-typescript": "^0.2.2",
+    "@offchainlabs/prettier-config": "^0.2.1",
+    "@types/node": "^22.7.3",
+    "@types/yargs": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "viem": "^2.21.15",
+    "yargs": "^17.7.2"
+  },
+  "scripts": {
+    "execute": "ts-node src/index.ts",
+    "prettier:check": "prettier --check '**/*.{ts,md,json,yml}'",
+    "prettier:format": "prettier --write '**/*.{ts,md,json,yml}'"
+  }
+}
